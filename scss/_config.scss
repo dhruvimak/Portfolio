@@ -22,9 +22,11 @@ $background-opacity:0.8;
                 content: '';
                 position: absolute;
                 top:0;
-                right: 0;
-                width: 100%;
-                height: -webkit-fill-available;
+                right:0;
+                left:0;
+                bottom: 0;
+                width: 100vw;
+                height:-webkit-fill-available;
                 background: rgba($primary-color,$background-opacity);
                 z-index: -1;
             }

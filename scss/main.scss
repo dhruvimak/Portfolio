@@ -1,5 +1,6 @@
-@import 'config';
-@import 'menu';
+@import '_config';
+@import '_menu';
+@import '_mobile';
 html {
     font-size: 16px;
 }
@@ -150,7 +151,7 @@ main {
 //work
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.7rem;
     img {
         width: 100%;
@@ -219,5 +220,3 @@ main {
     background: darken($color: $primary-color, $amount: 10);
     height: 60px;
 }
-
-@import 'mobile';

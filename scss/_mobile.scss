@@ -1,85 +1,78 @@
 // widescreens
-@include mediaXl{
-    .projects{
-        grid-template-columns: repeat(4,1fr);
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
     }
-
 }
 
 // desktop and laptop
-@include mediaLg{
-
-    .lg-heading{
+@include mediaLg {
+    .lg-heading {
         letter-spacing: -0.04cm;
         line-height: 1;
     }
-    .projects{
-        grid-template-columns: repeat(3,1fr);
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 // tablet and small laptops
-@include mediaMd{
-    main{
+@include mediaMd {
+    main {
         align-items: center;
-        text-align: center;        
-        
-        .lg-heading{
+        text-align: center;
+        .lg-heading {
             letter-spacing: -0.04cm;
             line-height: 1;
         }
-
     }
-    ul.menu-nav,div.menu-branding{
-        float: none;         
-        width: 100%;
+    .menu {
+        width: 75%;
+    }
+    ul.menu-nav {
+        float: none;
+        height: -webkit-fill-available;
         min-height: 0;
-
-        &.show{
-            transform: translate3d(0,0,0);
+        &.show {
+            transform: translateX(0);
             font-size: 24px;
         }
     }
-    
-    .menu-nav{
-        height: 75vh;
-        transform: translate3d(-100%,0,0);
+    .menu-nav {
+        transform: translateX(100%);
     }
-
-    .menu-branding{
-        height: 25vh;
-        transform: translate3d(100%,0,0);
-
-        .potfolio{
-            background: url(../img/portrait_small.jpg);
-            width: 150px;
-            height: 150px;
-            background-size: cover;
-        }
-    }
-
-    .about-info{
-        grid-template-areas: 
-        'bioimage'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
+    .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
         grid-template-columns: 1fr;
     }
-
-    .projects{
-        grid-template-columns: repeat(2,1fr);
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 // mobile
-@include mediaSm{
-    main#home h1{
-        margin-top:10vh;
+@include mediaSm {
+    main{
+        padding: 1rem !important;
+        &>h1 {
+            margin-top: 10vh !important;
+            font-size: 4rem !important;
+        }
     }
-
-    .projects{
-        grid-template-columns: 1fr;
+    main h2 {
+        font-size: 1.2rem !important;
+        margin-top: 10px !important;
+    }
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+         'bio' 
+         'job1'
+         'job2'
+         'job3' !important;
+         grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .projects {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
 }
