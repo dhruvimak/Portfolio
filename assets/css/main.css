@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 15%;
+  width: auto;
   opacity: 0.9;
   visibility: hidden;
 }
@@ -50,6 +50,7 @@
 /* line 41, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
 .menu.show {
   visibility: visible;
+  height: 100%;
 }
 
 /* line 44, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
@@ -59,11 +60,14 @@
   transform: translate3d(0, -100%, 0);
   width: 100%;
   transition: all 0.5s ease-out;
+  height: 100%;
 }
 
 /* line 50, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
+  padding-top: 4rem;
+  padding-right: 2rem;
 }
 
 /* line 54, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
@@ -170,7 +174,7 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 6rem;
+  font-size: calc(1rem + 5vw);
   color: #fff;
 }
 
@@ -191,6 +195,10 @@ h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: rgba(73, 73, 73, 0.5);
+}
+
+h3.sm-description{
+  background-color: transparent;
 }
 
 /* line 45, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
@@ -225,6 +233,7 @@ header .home-icon {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
+  text-align: center;
 }
 
 /* line 72, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
@@ -427,7 +436,6 @@ main#id h1 {
   /* line 10, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
   .lg-heading {
     letter-spacing: -0.04cm;
-    line-height: 1;
   }
   /* line 14, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
   .projects {
@@ -449,7 +457,7 @@ main#id h1 {
   /* line 29, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
   ul.menu-nav {
     float: none;
-    width: 100%;
+    width: 100vw;
     min-height: 0;
   }
   /* line 33, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
@@ -459,8 +467,7 @@ main#id h1 {
   }
   /* line 38, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
   .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
+    height: 100%;
   }
   /* line 42, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
   .about-info {
@@ -482,6 +489,12 @@ main#id h1 {
   .projects {
     grid-template-columns: 1fr;
   }
+
+  h2.lg-heading {
+    font-size: 4rem;
+  }
 }
 
-/*# sourceMappingURL=../dist/css/main.map */
+.pre-heading {
+  font-size: 1.5rem;
+}
