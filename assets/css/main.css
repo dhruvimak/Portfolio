@@ -1,500 +1,81 @@
-/* line 2, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn {
-  position: absolute;
-  right: 35px;
-  top: 35px;
-  z-index: 3;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-}
-
-/* line 9, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
-  margin: 0 0 5px 0;
-  background: #fff;
-  transition: all 0.5s ease-out;
-}
-
-/* line 16, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn.close {
-  transform: rotate(180deg);
-}
-
-/* line 20, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn.close .btn-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-/* line 23, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn.close .btn-line:nth-child(2) {
-  opacity: 0;
-}
-
-/* line 26, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-/* line 34, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: auto;
-  opacity: 0.9;
-  visibility: hidden;
-}
-
-/* line 41, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu.show {
-  visibility: visible;
-  height: 100%;
-}
-
-/* line 44, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-nav {
-  background: #373737;
-  list-style: none;
-  transform: translate3d(0, -100%, 0);
-  width: 100%;
-  transition: all 0.5s ease-out;
-  height: 100%;
-}
-
-/* line 50, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu-nav.show {
-  transform: translate3d(0, 0, 0);
-  padding-top: 4rem;
-  padding-right: 2rem;
-}
-
-/* line 54, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu .nav-item {
-  transform: translate3d(600px, 0, 0);
-  transition: all 0.5s ease-out;
-}
-
-/* line 57, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu .nav-item.show {
-  transform: translate3d(0, 0, 0);
-}
-
-/* line 61, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu .nav-link {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 1rem 0;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-out;
-}
-
-/* line 71, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu .nav-link:hover {
-  color: #eece1a;
-}
-
-/* line 75, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.menu .active {
-  color: #eece1a;
-}
-
-/* line 81, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.nav-item:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-/* line 81, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.nav-item:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-/* line 81, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.nav-item:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-/* line 81, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_menu.scss */
-.nav-item:nth-child(4) {
-  transition-delay: 0.4s;
-}
-
-/* line 3, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-html {
-  font-size: 16px;
-}
-
-/* line 7, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-/* line 12, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-body {
-  color: #fff;
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  background: rgba(68, 68, 68, 0.8);
-}
-
-/* line 16, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_config.scss */
-body#bg-image {
-  background: url(../img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* line 21, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_config.scss */
-body#bg-image::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: -webkit-fill-available;
-  background: rgba(68, 68, 68, 0.8);
-  z-index: -1;
-}
-
-/* line 22, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-h1,
-h2,
-h3 {
-  font-weight: 400;
-}
-
-/* line 26, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
-  font-size: calc(1rem + 5vw);
-  color: #fff;
-}
-
-/* line 30, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-h1.lg-heading:hover,
-h2.lg-heading:hover,
-h3.lg-heading:hover {
-  font-size: 6.1rem;
-  transition: all 0.5s ease-out;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-/* line 38, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
-}
-
-h3.sm-description{
-  background-color: transparent;
-}
-
-/* line 45, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 50, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-/* line 55, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-header .home-icon {
-  position: absolute;
-  right: 40px;
-  top: 5rem;
-  z-index: -2 !important;
-  width: 28px !important;
-  cursor: pointer;
-}
-
-/* line 65, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.secondary-text {
-  color: #eece1a;
-}
-
-/* line 69, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
-  text-align: center;
-}
-
-/* line 72, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main .icons {
-  margin-top: 1rem;
-}
-
-/* line 75, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main a {
-  padding: 0.4rem;
-  color: #fff;
-}
-
-/* line 78, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main a:hover {
-  color: #eece1a;
-  transition: all 0.5s ease-out;
-}
-
-/* line 83, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main#id {
-  overflow: hidden;
-}
-
-/* line 85, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-main#id h1 {
-  margin-top: 20vh;
-}
-
-/* line 91, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bio bio bio' 'job1 job2 job3' 'job4 job5 job6';
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* line 96, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: #eece1a 3px solid;
-  width: 250px;
-  height: 250px;
-}
-
-/* line 104, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .bio {
-  grid-area: bio;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-/* line 109, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .bio p {
-  margin-top: 15px;
-  font-size: 1.3rem;
-  font-weight: 350;
-}
-
-/* line 115, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job {
-  background: #515151;
-  padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
-}
-
-/* line 120, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job p {
-  margin-top: 1.1rem;
-  font-weight: 300;
-  font-size: 1.05rem;
-}
-
-/* line 126, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job h3 {
-  color: #eece1a;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* line 131, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job h3:hover {
-  font-size: 1.2rem;
-  border-bottom: 2px solid #fff;
-  margin-bottom: 4px;
-  transition: all 0.5s ease-out;
-}
-
-/* line 139, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job-1 {
-  grid-area: job1;
-}
-
-/* line 142, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job-2 {
-  grid-area: job2;
-}
-
-/* line 145, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.about-info .job-3 {
-  grid-area: job3;
-}
-
-/* line 151, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
-}
-
-/* line 155, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.projects img {
-  width: 100%;
-  height: 200px;
-  border: 3px white soild;
-}
-
-/* line 159, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.projects img:hover {
-  opacity: 0.5;
-  border-color: #eece1a;
-  transition: all 0.5s ease-out;
-}
-
-/* line 168, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-/* line 174, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.boxes div {
-  font-size: 1.3rem;
-  border: 3px white solid;
-  padding: 1.5rem 1.5rem;
-  margin-bottom: 3rem;
-  transition: all 0.5s ease-out;
-}
-
-/* line 180, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.boxes div:hover {
-  padding: 0.5rem 0.5rem;
-  background: #eece1a;
-  color: #000;
-}
-
-/* line 184, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.boxes div:hover span {
-  color: #000;
-}
-
-/* line 192, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-}
-
-/* line 197, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
-  color: #000;
-}
-
-/* line 203, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.btn-dark {
-  background: black;
-  color: #fff;
-}
-
-/* line 209, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-.btn-light {
-  background: #c4c4c4;
-  color: #000;
-}
-
-/* line 215, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/main.scss */
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  color: #fff;
-  background: #2b2b2b;
-  height: 60px;
-}
-
-@media screen and (min-width: 1171px) {
-  /* line 3, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  /* line 10, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .lg-heading {
-    letter-spacing: -0.04cm;
-  }
-  /* line 14, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* line 21, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  main {
-    align-items: center;
-    text-align: center;
-  }
-  /* line 24, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  main .lg-heading {
-    letter-spacing: -0.04cm;
-    line-height: 1;
-  }
-  /* line 29, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  ul.menu-nav {
-    float: none;
-    width: 100vw;
-    min-height: 0;
-  }
-  /* line 33, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  ul.menu-nav.show {
-    transform: translate3d(0, 0, 0);
-    font-size: 24px;
-  }
-  /* line 38, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .menu-nav {
-    height: 100%;
-  }
-  /* line 42, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr;
-  }
-  /* line 46, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  /* line 53, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  main#home h1 {
-    margin-top: 10vh;
-  }
-  /* line 56, C:/Users/dhruvi.makvana/Pictures/project/portfolio/scss/_mobile.scss */
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  h2.lg-heading {
-    font-size: 4rem;
-  }
-}
-
-.pre-heading {
-  font-size: 1.5rem;
-}
+.menu-btn{position:absolute;right:35px;top:35px;z-index:3;cursor:pointer;transition:all .3s ease-out}
+.menu-btn .btn-line{width:28px;height:3px;margin:0 0 5px 0;background:#fff;transition:all .3s ease-out}
+.menu-btn.close{transform:rotate(180deg)}
+.menu-btn.close .btn-line:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.menu-btn.close .btn-line:nth-child(2){opacity:0}
+.menu-btn.close .btn-line:nth-child(3){transform:rotate(-45deg) translate(7px,-6px)}
+.menu{position:fixed;top:0;right:0;width:auto;opacity:.9;visibility:hidden}
+.menu.show{visibility:visible;height:100%}
+.menu-nav{background:#373737;list-style:none;transform:translate3d(0,-100%,0);width:100%;transition:all .3s ease-out;height:100%}
+.menu-nav.show{transform:translate3d(0,0,0);padding-top:4rem;padding-right:2rem}
+.menu .nav-item{transform:translate3d(600px,0,0);transition:all .3s ease-out}
+.menu .nav-item.show{transform:translate3d(0,0,0)}
+.menu .nav-link{display:inline-block;position:relative;font-size:30px;text-transform:uppercase;padding:1rem 0;font-weight:300;color:#fff;text-decoration:none;transition:all .3s ease-out}
+.menu .nav-link:hover{color:#eece1a}
+.menu .active{color:#eece1a}
+.nav-item:nth-child(1){transition-delay:.1s}
+.nav-item:nth-child(2){transition-delay:.2s}
+.nav-item:nth-child(3){transition-delay:.3s}
+.nav-item:nth-child(4){transition-delay:.4s}
+html{font-size:16px}
+*{box-sizing:border-box;margin:0}
+body{color:#fff;height:100%;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.5;background:rgba(68,68,68,.8)}
+body#bg-image{background:url(../img/background.jpg);background-attachment:fixed;background-size:cover}
+body#bg-image::after{content:'';position:absolute;top:0;right:0;width:100%;height:-webkit-fill-available;background:rgba(68,68,68,.8);z-index:-1}
+h1,h2,h3{font-weight:400}
+h1.lg-heading,h2.lg-heading,h3.lg-heading{font-size:calc(1rem + 5vw);color:#fff}
+h1.lg-heading:hover,h2.lg-heading:hover,h3.lg-heading:hover{font-size:6.1rem;transition:all .3s ease-out;font-weight:500;cursor:pointer}
+h1.sm-heading,h2.sm-heading,h3.sm-heading{margin-bottom:2rem;padding:.2rem 1rem;background:rgba(73,73,73,.5)}
+h3.sm-description{background-color:transparent}
+a{color:#fff;text-decoration:none}
+header{position:fixed;z-index:2;width:100%}
+header .home-icon{position:absolute;right:40px;top:5rem;z-index:-2!important;width:28px!important;cursor:pointer}
+.secondary-text{color:#eece1a}
+main{padding:4rem;min-height:calc(100vh - 60px);text-align:center}
+main .icons{margin-top:1rem}
+main a{padding:.4rem;color:#fff}
+main a:hover{color:#eece1a;transition:all .3s ease-out}
+main#id{overflow:hidden}
+main#id h1{margin-top:20vh}
+.about-info{display:grid;grid-gap:30px;grid-template-areas:'bio bio bio' 'job1 job2 job3' 'job4 job5 job6';grid-template-columns:repeat(3,1fr)}
+.about-info .bio-image{grid-area:bioimage;margin:auto;border-radius:50%;border:#eece1a 3px solid;width:250px;height:250px}
+.about-info .bio{grid-area:bio;font-size:1.5rem;font-weight:500}
+.about-info .bio p{margin-top:15px;font-size:1.3rem;font-weight:350}
+.about-info .job{background:#515151;padding:.5rem;border-bottom:#eece1a 5px solid}
+.about-info .job p{margin-top:1.1rem;font-weight:300;font-size:1.05rem}
+.about-info .job h3{color:#eece1a;display:block;margin-bottom:5px}
+.about-info .job h3:hover{font-size:1.2rem;border-bottom:2px solid #fff;margin-bottom:4px;transition:all .3s ease-out}
+.about-info .job-1{grid-area:job1}
+.about-info .job-2{grid-area:job2}
+.about-info .job-3{grid-area:job3}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:.7rem}
+.projects img{width:100%;height:200px;border:3px #fff soild}
+.projects img:hover{opacity:.5;border-color:#eece1a;transition:all .3s ease-out}
+.boxes{display:flex;flex-wrap:wrap;justify-content:space-evenly;align-items:center;margin-top:1rem}
+.boxes div{font-size:1.3rem;border:3px #fff solid;padding:1.5rem 1.5rem;margin-bottom:3rem;transition:all .3s ease-out}
+.boxes div:hover{padding:.5rem .5rem;background:#eece1a;color:#000}
+.boxes div:hover span{color:#000}
+.btn,.btn-dark,.btn-light{display:block;padding:.5rem 1rem;border:0;margin-bottom:.3rem}
+.btn:hover,.btn-dark:hover,.btn-light:hover{background:#eece1a;color:#000}
+.btn-dark{background:#000;color:#fff}
+.btn-light{background:#c4c4c4;color:#000}
+#main-footer{text-align:center;padding:1rem;color:#fff;background:#2b2b2b;height:60px}
+@media screen and (min-width:1171px){.projects{grid-template-columns:repeat(4,1fr)}
+}
+@media screen and (min-width:769px) and (max-width:1170px){.lg-heading{letter-spacing:-.04cm}
+.projects{grid-template-columns:repeat(3,1fr)}
+}
+@media screen and (max-width:768px){main{align-items:center;text-align:center}
+main .lg-heading{letter-spacing:-.04cm;line-height:1}
+ul.menu-nav{float:none;width:100vw;min-height:0}
+ul.menu-nav.show{transform:translate3d(0,0,0);font-size:24px}
+.menu-nav{height:100%}
+.about-info{grid-template-areas:'bioimage' 'bio' 'job1' 'job2' 'job3';grid-template-columns:1fr}
+.projects{grid-template-columns:repeat(2,1fr)}
+.sm-heading{margin-top:24px}
+}
+@media screen and (max-width:500px){main#home h1{margin-top:10vh}
+.projects{grid-template-columns:1fr}
+h2.lg-heading{font-size:4rem}
+}
+.pre-heading{font-size:1.5rem}
