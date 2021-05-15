@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/businesscard.css">
     <title>Contact Me</title>
 </head>
 
@@ -47,7 +48,30 @@
         </h1>
         <h2 class="sm-heading">How you can reach me...</h2>
 
-        <div class="boxes">
+        <div class="wrapper" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="card-front">
+                  <div class="logo">
+                      <img class="logo-img" src="/assets/img/name-logo.png" alt="Dhruvi Makvana">
+                </div>
+                <h2 class="name">DHRUVI MAKVANA</h2>
+                <h3 class="h3 about">Web Developer</h3>
+              </div>
+              <div class="card-back">
+                <h3 class="h3 contact-info"><a><i class="fas fa-phone-square">&nbsp;</i>+91 87349 43662</a></h3>
+                <h3 class="h3 contact-info"><a href="http://makd.me"><i class="fas fa-link">&nbsp;</i>makd.com</a></h3>
+                <h3 class="h3 contact-info"><a href="mailto:dhruvipmakavana@yahoo.com"><i class="fas fa-envelope"></i>&nbsp;dhruvipmakavana@yahoo.com</a></h3>
+                <h3 class="h3 contact-info"><a><i class="fas fa-map-marker-alt"></i>&nbsp;Bangalore, India</a></h3>
+              </div>
+            </div> 
+          </div> 
+          <div>
+            <p class="info">
+              Roll over the card for contact details.
+            </p>
+          </div>
+
+        <!-- <div class="boxes">
 
             <div>
                 <span class="secondary-text">Email : </span>
@@ -63,11 +87,11 @@
                 <span class="secondary-text">Location : </span>
                 Banglore, India
             </div>
-        </div>
+        </div> -->
     </main>
 
     <footer id="main-footer">
-        Copyright &copy; Dhruvi Makvana 2018.All rights reserved.
+        Copyright &copy; Dhruvi Makvana <span id="currentYear"></span>.All rights reserved.
     </footer>
 </body>
 <script src="assets/js/main.js"></script>
